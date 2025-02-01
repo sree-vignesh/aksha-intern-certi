@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship Certificate Verification</title>
+    <link rel="stylesheet" href="PROGSEPIN314_files/verify.css" />
+    <script>
+      function getQueryParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+          name: params.get("name") || "Lochan Shruthi VS",
+          id: params.get("id") || "PROGSEPIN314",
+        };
+      }
+
+      function updateCertificate() {
+        const { name, id } = getQueryParams();
+        document.getElementById("certificate-name").innerText = name;
+        document.getElementById("certificate-id").innerText = id;
+      }
+
+      window.onload = updateCertificate;
+    </script>
+  </head>
+
+  <body>
+    <div id="certificate">
+      <div id="logo-container">
+        <img
+          id="company-logo"
+          src="PROGSEPIN314_files/another-broucher-logo-removebg-preview.png"
+          alt="Company Logo"
+        />
+      </div>
+      <h2 style="color: #3498db">Certificate Verified for</h2>
+      <p style="color: #555">
+        Dear
+        <span class="highlight-name" id="certificate-name"
+          >Lochan Shruthi VS</span
+        >
+        { <span id="certificate-id">PROGSEPIN314</span> },
+      </p>
+
+      <p style="color: #555">
+        We sincerely appreciate your outstanding dedication and contribution
+        during your internship at PROGMASTER PVT LTD.
+      </p>
+
+      <p style="color: #555">
+        In recognition of your exceptional performance as a Data Science Intern,
+        we are delighted to present you with this certificate.
+      </p>
+
+      <p><strong style="color: #3498db">Internship Details:</strong></p>
+      <ul style="list-style: none; padding: 0; text-align: center">
+        <li style="color: #777"><strong>Domain :</strong> Data Science</li>
+        <li style="color: #777">
+          <strong>Duration :</strong> Nov 01 2024 - Jan 15 2025
+        </li>
+        <li style="color: #777"><strong>Total Hours :</strong> 120 Hours</li>
+      </ul>
+
+      <p style="color: #777">
+        During your internship, you have demonstrated commendable skills and
+        commitment, working for 45 days.
+      </p>
+
+      <p style="color: #007bff">
+        Your dedication to learning and active participation have made a
+        significant impact on our team.
+      </p>
+
+      <p style="color: #777">
+        As a Data Science Intern, you did a great job. PROGMASTER appreciates
+        your dedication and efforts.
+      </p>
+
+      <p style="color: #777">
+        Congratulations on successfully completing your internship!
+      </p>
+
+      <p style="color: #3498db">
+        Best Regards <br /><br />
+        <img
+          class="company-seal"
+          src="PROGSEPIN314_files/round%20progmaster.jpg"
+          alt="Company Seal"
+        />
+      </p>
+
+      <div id="signatures">
+        <div class="signature-container">
+          <img
+            class="signature"
+            src="PROGSEPIN314_files/kp%20sign.png"
+            alt="Founder's Signature"
+          />
+          <p class="signature-label">CEO &amp; Founder</p>
+        </div>
+        <div class="signature-container">
+          <img
+            class="signature"
+            src="PROGSEPIN314_files/mp%20sign.png"
+            alt="Co-founder's Signature"
+          />
+          <p class="signature-label">Co-founder</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

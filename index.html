@@ -12,13 +12,15 @@
         return {
           name: params.get("name") || "Akshaya S",
           id: params.get("id") || "PROGSEPIN315",
+          duration: params.get("duration") || "Nov 01 2024 - Jan 15 2025",
         };
       }
 
       function updateCertificate() {
-        const { name, id } = getQueryParams();
+        const { name, id, duration } = getQueryParams();
         document.getElementById("certificate-name").innerText = name;
         document.getElementById("certificate-id").innerText = id;
+        document.getElementById("certificate-duration").innerText = duration;
       }
 
       window.onload = updateCertificate;
@@ -57,7 +59,8 @@
       <ul style="list-style: none; padding: 0; text-align: center">
         <li style="color: #777"><strong>Domain :</strong> Data Science</li>
         <li style="color: #777">
-          <strong>Duration :</strong> Nov 01 2024 - Jan 15 2025
+          <strong>Duration :</strong>
+          <span id="certificate-duration">Nov 01 2024 - Jan 15 2025</span>
         </li>
         <li style="color: #777"><strong>Total Hours :</strong> 120 Hours</li>
       </ul>
